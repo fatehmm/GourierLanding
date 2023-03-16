@@ -18,3 +18,5 @@ openMenu.addEventListener('click', function (){
     mobileMenu.classList.add('opacity-100', 'scale-100');
     }, 10);
 })
+
+
