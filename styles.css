@@ -3,6 +3,6 @@ h1 {
     font-weight: 800;
 
 }
-.partners-title {
+.partners-title , .feature-text{
     font-family: 'Space Grotesk';
 }
