@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourier - get your shipments easily.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="font-['Inter']">
+    <div class=" md:h-[10vh] relative">
+        <div class="relative bg-white">
+            <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+              <div>
+                <a href="#" class="flex">
+                  
+                  <img class="h-8 w-auto sm:h-18" src="/assets/images/gourierLogo.svg" alt="logo">
+                </a>
+              </div>
+              <div class="-mr-2 -my-2 md:hidden">
+                <button id="open-menu-button" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                  <span class="sr-only">Open menu</span>
+                  <!-- Heroicon name: outline/menu -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              </div>
+              <div class="hidden md:flex-1 md:flex md:items-center md:justify-between">
+                <nav class="flex space-x-10">
+                  <div class="relative">
+                    
+                  <a href="#" class="px-2 text-sm font-normal  text-black hover:text-black"> Product </a>
+                  <a href="#" class="px-2 text-sm font-normal text-black hover:text-black"> Pricing </a>
+                  <a href="#" class="px-2 text-sm font-normal text-black hover:text-black"> Contact </a>
+                  <a href="#" class="px-2 text-sm font-normal text-black hover:text-black"> Blog </a>
+                  <a href="#" class="px-2 text-sm font-normal text-black hover:text-black"> FAQs </a>
+          
+                  
+                </nav>
+                <div class="flex items-center md:ml-12">
+                    <a href="#" class="ml-8 inline-flex items-center justify-center px-6 py-2 border rounded-md shadow-sm text-sm font-normal  text-[#4F4DC2]  border-[#4F4DC2] "> Log in </a>
+                  <a href="#" class="ml-8 inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-md shadow-sm text-sm font-normal text-white bg-indigo-600 hover:bg-indigo-700"> Register </a>
+                </div>
+              </div>
+            </div>
+          
+            <!--
+              Mobile menu, show/hide based on mobile menu state.
+          
+              Entering: "duration-200 ease-out"
+                From: "opacity-0 scale-95"
+                To: "opacity-100 scale-100"
+              Leaving: "duration-100 ease-in"
+                From: "opacity-100 scale-100"
+                To: "opacity-0 scale-95"
+            -->
+            <div id="mobile-menu" data-state="false" class="opacity-0 scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+              <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+                <div class="pt-5 pb-6 px-5">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <img class="h-8 w-auto" src="/assets/images/gourierLogo.svg" alt="Workflow">
+                    </div>
+                    <div class="-mr-2">
+                      <button id="mobile-close-button" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                        <span class="sr-only">Close menu</span>
+                        <!-- Heroicon name: outline/x -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <nav class="grid gap-6">
+                      <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                        
+                        <div class="ml-4 text-base font-medium text-gray-900">Product</div>
+                      </a>
+          
+                      <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                        
+                        <div class="ml-4 text-base font-medium text-gray-900">Pricing</div>
+                      </a>
+          
+                      <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                        
+                        <div class="ml-4 text-base font-medium text-gray-900">Contact</div>
+                      </a>
+          
+                      <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                        
+                        <div class="ml-4 text-base font-medium text-gray-900">Blog</div>
+                      </a>
+          
+                      <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                        
+                        <div class="ml-4 text-base font-medium text-gray-900">FAQs</div>
+                      </a>
+          
+                      
+                    </nav>
+                  </div>
+                </div>
+                <div class="py-6 px-5">
+                  
+                  <div class="mt-6">
+                    <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"> Register </a>
+                    <p class="mt-6 text-center text-base font-medium text-gray-500">
+                      Existing customer?
+                      <a href="#" class="text-indigo-600 hover:text-indigo-500"> Log in </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+    </div>
+    <div class="h-[90vh] ">
+        <div class="people-div w-screen h-[100%]">
+            <div class="people-img-div w-[90%] m-auto flex justify-center pt-[5%]">
+                <img class="w-[70%] h-auto" src="./assets/images/people.svg" alt="people">
+            </div>
+            <div class="hero-text pt-[10%] flex justify-center">
+                <div class="text-h1 w-[95%] pl-2 ">
+                    <h1 class="text-3xl text-clip"> Gourier. Your access. Everywhere. </h1>
+                    <p class="pt-1 text-gray-800">Get the products you want, at the price you deserve.</p>
+                    <div class="w-[85%] flex pt-3 sm:pt-1">
+                        <a href="#" class="inline-flex justify-center items-center w-[35%] h-10 border border-transparent rounded-md shadow-sm text-xs font-normal text-white bg-indigo-600 hover:bg-indigo-700"> Register now </a>
+                        <a href="#" class=" w-[65%] flex items-center  pl-2">
+                            <span class="text-sm flex-nowrap"> See how it works </span>
+                            <img class="pl-2" src="./assets/icons/seehowitworks.svg" alt="see how it works">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="h-[40vh] bg-yellow-600">
+
+    </div>
+    <div class="h-[90vh] bg-green-400">
+
+    </div>
+    <div class="h-[90vh] bg-indigo-400">
+
+    </div>
+    <div class="h-[90vh] bg-teal-500">
+
+    </div>
+    <div class="h-[90vh] bg-pink-500">
+
+    </div>
+    <div class="h-[100vh] bg-green-400">
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
