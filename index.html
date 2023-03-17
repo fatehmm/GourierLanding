@@ -64,7 +64,7 @@
                 From: "opacity-100 scale-100"
                 To: "opacity-0 scale-95"
             -->
-            <div id="mobile-menu" data-state="false" class="opacity-0 scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+            <div id="mobile-menu" data-state="false" class="hidden opacity-0 scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
               <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                 <div class="pt-5 pb-6 px-5">
                   <div class="flex items-center justify-between">
@@ -128,10 +128,10 @@
         
         
     </div>
-    <div class="h-[80vh] w-screen">
+    <div class="h-[90vh] w-screen">
         <div class="people-div w-screen h-[100%] md:flex">
-            <div class="md:order-2 people-img-div w-[90%] md:w-[50%] md:h-[100%] m-auto flex justify-center pt-[5%]">
-                <img class="w-[70%] h-auto md:h-[80%]" src="./assets/images/people.svg" alt="people">
+            <div class="md:order-2 h-[65%] people-img-div w-[90%] md:w-[50%] md:h-[100%] m-auto flex justify-center pt-[5%]">
+                <img class="w-auto h-[100%] md:h-[80%]" src="./assets/images/people.svg" alt="people">
             </div>
             <div class="md:order-1 md:h-[100%] md:w-[50%] hero-text pt-[10%] md:p-0 flex items-center md:justify-center">
                 <div class="text-h1 w-[95%] md:w-[80%]  pl-2 md:h-[70%] md:flex md:flex-col md:justify-center">
@@ -149,7 +149,7 @@
         </div>
         
     </div>
-    <div class="md:h-[30vh] w-screen  flex items-center justify-center">
+    <div class="md:h-[30vh] w-screen  my-[5rem] md:my-0 flex items-center justify-center">
       <div class="md:h-[70%] w-[90%]  flex  items-center flex-col md:flex-row   sm:items-center">
         <div class="partners-title text-2xl text-center md:w-[30%] lg:text-3xl">Our partners: </div>
         <div class="w-[70%] md:w-[35%] lg:w-[15%] md:mt-0 mt-6 flex items-center">
@@ -160,7 +160,7 @@
         </div>
       </div>
     </div>
-    <div class="h-[90vh] w-screen  md:flex">
+    <div class="h-[90vh] w-screen my-[5rem] md:my-0 md:flex">
       <div class="w-[100%] mt-6 md:mt-0 md:w-[50%] md:flex md:items-center">
           <img class="w-[90%] md:w-[70%] lg:w-[60%] md:w-[100%] h-auto m-auto" src="./assets/images/EverythingEverywhere.png" alt="">
       </div>
@@ -178,7 +178,7 @@
         </div>
       </div>
     </div>
-    <div class="h-[90vh] w-screen  flex flex-col md:flex-row md:flex">
+    <div class="h-[90vh] w-screen my-[5rem] md:my-0 flex flex-col md:flex-row md:flex">
       
       <div class="order-2 md:order-1 w-[100%] md:w-[50%]  md:flex md:items-center">
         <div class=" w-[70%] ml-8 md:ml-[20%]">
@@ -197,7 +197,7 @@
         <img class="w-[90%] md:w-[70%] lg:w-[60%] md:w-[100%] h-auto m-auto" src="./assets/images/TravelTheWrld.png" alt="">
     </div>
     </div>
-    <div class="h-[90vh] w-screen mt-[10rem] md:mt-0 md:flex">
+    <div class="h-[90vh] w-screen  my-[10rem]  md:flex">
       <div class="w-[100%] mt-6 md:mt-0 md:w-[50%] md:flex md:items-center">
           <img class="w-[90%] md:w-[70%] lg:w-[60%] md:w-[100%] h-auto m-auto" src="./assets/images/SendDocuments.png" alt="">
       </div>
@@ -301,8 +301,62 @@
       </div>
     </div>
     <!-- DESKTOP NAVBAR -->
-    <div class="hidden md:block h-[60vh] bg-[#F9F9F9]">
+    <div class="hidden md:block h-[60vh] bg-[#F9F9F9] md:flex md:flex-col">
+      <div class="w-screen h-[90%]  flex">
+        <div class="w-[50%] h-[100%]  ">
+          <div class="w-[70%] mx-auto  h-[100%]">
+              <div class="footer-logo w-[100%] h-[10%] mt-[5%] ml-[5%]">
+                <img class="h-[100%]" src="./assets/images/gourierLogo.svg" alt="gourierLogo">
+              </div>
+              <div class="footer-desc w-[100%] h-[30%]  flex flex-col items-center justify-center">
+                <p class="text-2xl font-bold footer-p text-left">Want product news and updates?</p>
+                <p class="text-2xl font-bold footer-p text-left">Sign up for our newsletter.</p>
+              </div>
+              <form action="" class="h-[70%] w-[100%] pl-[20%]">
+                <input class="h-[20%] w-[50%] rounded-l-[10px] border" type="text" placeholder="   Enter your email">
+                <button class="h-[20%] w-[7rem] text-white bg-[#4F4DC2] relative right-2 rounded-r-[10px]"> Register </button>
+              </form>
+          </div>
+        </div>
+        
+        <div class="w-[50%] h-[100%]   flex">
+          <div class="w-[40%] h-[100%]  flex items-center justify-center">
+            <div class="w-[50%] h-[50%] ">
+              <span class="text-2xl">About us</span>
+            <ul>
+              <li class="text-xl py-2"><a href="">Our team</a></li>
+              <li class="text-xl py-2"><a href="">Our company</a></li>
+              <li class="text-xl py-2"><a href="">Careers</a></li>
+              <li class="text-xl py-2"><a href="">Media</a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="w-[40%] h-[100%]  flex items-center justify-center">
+            <div class="w-[50%] h-[50%] ">
+              <span class="text-2xl">Useful</span>
+            <ul>
+              <li class="text-xl py-2"><a href="">Home</a></li>
+              <li class="text-xl py-2"><a href="">Contact</a></li>
+              <li class="text-xl py-2"><a href="">News</a></li>
+              <li class="text-xl py-2"><a href="">FAQs</a></li>
+            </ul>
+            </div>
+          </div>
+          
+          <div class="w-[20%] h-[100%]  flex items-center justify-center">
+            <ul > 
+              <li class="py-2"><a href=""><img src="./assets/icons/instagram.png" alt=""></a></li>
+              <li class="py-2"><a href=""><img src="./assets/icons/facebook.png" alt=""></a></li>
+              <li class="py-2"><a href=""><img src="./assets/icons/linkedin.png" alt=""></a></li>
+              <li class="py-2"><a href=""><img src="./assets/icons/twitter.png" alt=""></a></li>
+            </ul>
+          </div>
 
+        </div>
+      </div>
+      <div class="h-[10%] w-screen   flex items-center">
+        <p class="text-xl pl-[10%] text-gray-700">© 2023 Gourier, Inc. All rights reserved. Made in Baku with ❤️</p>
+      </div>
     </div>
    
     
