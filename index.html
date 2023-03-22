@@ -12,14 +12,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="/styles.css">
     
 </head>
 
 <body class="font-['Inter']">
     <div class="md:h-[10vh] relative ">
-        <div class="w-screen bg-white fixed">
-            <div class="flex justify-between items-center mx-8 px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+        <div class="w-screen bg-white fixed z-50">
+            <div class="flex justify-between items-center mx-8 px-4 py-6 sm:px-6 md:justify-start md:space-x-10 ">
               <div>
                 <a href="#" class="flex">
                   
@@ -217,24 +219,85 @@
       </div>
     </div>
 
-    <!-- <div class="h-[65vh] w-screen flex bg-indigo-400">
-      <div class="w-screen md:w-[45%] h-[100%] bg-gray-500"></div>
-      <div class="w-screen md:w-[55%] h-[100%] bg-gray-700 relative  overflow-x-hidden">
-        <div class="absolute top-0 left-0 overflow-x-hidden ">
-          <div class="swiper mySwiper overflow-x-hidden ">
-            <div class="swiper-wrapper overflow-x-hidden">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              
+    <div class=" w-screen h-[45vh] md:h-[60vh] bg-[#F9F9F9] md:flex relative">
+      <div class="w-screen md:w-[45%]  h-[100%] p-[5%]">
+        <div class="w-[100%] h-[30%] flex items-center">
+          <p class="text-[2.2rem] font-space">Why Gourier?</p>
+        </div>
+        <div class="w-[100%] h-[30%] font-[14px] text-gray-700">
+          <p>Our tired and tested method guarantes excellent results and ensures you get the most meaingful insights. </p>
+        </div>
+        <div class="w-[100%] h-[40%] flex relative">
+          <button id="prev" class="absolute top-2 left-0 prev hover:ring-1 transition-[0.5s] hover:ring-gray-400 w-14 h-14 rounded-[50%] bg-white flex items-center justify-center">
+            <img class="h-[50%] w-[50%]" src="./assets/icons/chevron-left-solid.svg" alt="right">
+          </button>
+          <button id="next" class="absolute top-2 left-0 next hover:ring-1 transition-[0.5s] hover:ring-gray-400 w-14 h-14 rounded-[50%] bg-white ml-[5rem] flex items-center justify-center">
+            <img class="h-[50%] w-[50%]" src="./assets/icons/chevron-right-solid.svg" alt="right">
+          </button>
+        </div>
+
+      </div>
+      <div class="slider w-screen md:w-[55%]  h-[80%] p-[5%] flex relative z-0">
+        <div class="slider-wrapper w-[10000px] h-[100%]  flex items-center">
+          <div class="p-4 rounded-xl slider-item w-[300px] md:w-[400px] h-[100%] bg-slate-300">
+            <div class="w-[100%] h-[100%] ">
+              <div class="w-[100%] h-[100%] flex flex-col justify-center">
+                <p class="text-2xl font-bold font-space px-4"> No more unavailable, we make it available. </p>
+                <p class="px-4 my-2"> Our tired system makes it easy to send your things abroad and get most insightful results. </p>
+                <div class="flex ">
+                  <span class="text-2xl px-4 font-space"> Learn more </span>
+                  <img src="assets/icons/seehowitworks.svg" alt="play">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 rounded-xl slider-item w-[300px] md:w-[400px] h-[100%] bg-green-300 ml-10">
+            <div class="w-[100%] h-[100%] ">
+              <div class="w-[100%] h-[100%] flex flex-col justify-center">
+                <p class="text-2xl font-bold font-space px-4"> No more unavailable, we make it available. </p>
+                <p class="px-4 my-2"> Our tired system makes it easy to send your things abroad and get most insightful results. </p>
+                <div class="flex ">
+                  <span class="text-2xl px-4 font-space"> Learn more </span>
+                  <img src="assets/icons/seehowitworks.svg" alt="play">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 rounded-xl slider-item w-[300px] md:w-[400px] h-[100%] bg-blue-300 ml-10">
+            <div class="w-[100%] h-[100%] ">
+              <div class="w-[100%] h-[100%] flex flex-col justify-center">
+                <p class="text-2xl font-bold font-space px-4"> No more unavailable, we make it available. </p>
+                <p class="px-4 my-2"> Our tired system makes it easy to send your things abroad and get most insightful results. </p>
+                <div class="flex ">
+                  <span class="text-2xl px-4 font-space"> Learn more </span>
+                  <img src="assets/icons/seehowitworks.svg" alt="play">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 rounded-xl slider-item w-[300px] md:w-[400px] h-[100%] bg-yellow-300 ml-10">
+            <div class="w-[100%] h-[100%] ">
+              <div class="w-[100%] h-[100%] flex flex-col justify-center">
+                <p class="text-2xl font-bold font-space px-4"> No more unavailable, we make it available. </p>
+                <p class="px-4 my-2"> Our tired system makes it easy to send your things abroad and get most insightful results. </p>
+                <div class="flex ">
+                  <span class="text-2xl px-4 font-space"> Learn more </span>
+                  <img src="assets/icons/seehowitworks.svg" alt="play">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
-    <!-- MOBILE NAVBAR -->
-    <div class="md:hidden h-[90vh] bg-[#F9F9F9] flex items-center">
+      <div id="dots" class="hidden  absolute bottom-10 left-[40%] w-52 h-2  md:flex justify-evenly">
+        <div class="dot rounded-xl w-[20%] h-[100%] bg-gray-400"></div>
+        <div class="dot rounded-xl w-[20%] h-[100%] bg-gray-400"></div>
+        <div class="dot rounded-xl w-[20%] h-[100%] bg-gray-400"></div>
+        <div class="dot rounded-xl w-[20%] h-[100%] bg-gray-400"></div>
+      </div>
+    </div>
+      <!-- MOBILE FOOTER -->
+    <div class="md:hidden mt-[40vh] h-[90vh] bg-[#F9F9F9] flex items-center">
       <div class="w-screen h-[90%] ">
         <div class="w-screen h-[40%]">
           <div class="footer-logo h-[15%] pl-4">
@@ -300,7 +363,7 @@
         </div>
       </div>
     </div>
-    <!-- DESKTOP NAVBAR -->
+    <!-- DESKTOP FOOTER -->
     <div class="hidden md:block h-[60vh] bg-[#F9F9F9] md:flex md:flex-col">
       <div class="w-screen h-[90%]  flex">
         <div class="w-[50%] h-[100%]  ">
@@ -361,8 +424,8 @@
    
     
     
-    
     <script src="main.js"></script>
+    
 </body>
 <style>
 @media screen and (min-width: 1280px) and (max-width: 1800px) {
