@@ -60,12 +60,12 @@ prevButton.addEventListener('click', function() {
         }
         if(eslStyle==null || eslStyle != 0){
             if(styles) {
-                slide.style.transform = `translateX(${eslStyle+100}%)`
-                eslStyle += 100;
+                slide.style.transform = `translateX(${eslStyle+110}%)`
+                eslStyle += 110;
                 console.log(eslStyle)
             } else {
-                slide.style.transform = `translateX(100%)`
-                eslStyle = 100
+                slide.style.transform = `translateX(110%)`
+                eslStyle = 110
                 console.log(eslStyle)
             }
             
@@ -76,17 +76,17 @@ prevButton.addEventListener('click', function() {
             })
             dots[0].style.backgroundColor = "blue"
 
-        } else if(sliders[0].style.transform == 'translateX(-100%)'){
+        } else if(sliders[0].style.transform == 'translateX(-110%)'){
             dots.forEach(dot=> {
                 dot.style.backgroundColor = "rgb(156 ,163, 175)"
             })
             dots[1].style.backgroundColor = "blue"
-        }else if(sliders[0].style.transform == 'translateX(-200%)'){
+        }else if(sliders[0].style.transform == 'translateX(-220%)'){
             dots.forEach(dot=> {
                 dot.style.backgroundColor = "rgb(156 ,163, 175)"
             })
             dots[2].style.backgroundColor = "blue"
-        }else if(sliders[0].style.transform == 'translateX(-300%)'){
+        }else if(sliders[0].style.transform == 'translateX(-330%)'){
             dots.forEach(dot=> {
                 dot.style.backgroundColor = "rgb(156 ,163, 175)"
             })
@@ -112,13 +112,13 @@ nextButton.addEventListener('click', function() {
             eslStyle = parseInt(eslStyle.slice(0, -1))
             console.log(eslStyle)
         }
-        if(eslStyle ==null || eslStyle !=-300){
+        if(eslStyle ==null || eslStyle !=-330){
             if(styles) {
-                slide.style.transform = `translateX(${eslStyle-100}%)`
-                eslStyle -= 100
+                slide.style.transform = `translateX(${eslStyle-110}%)`
+                eslStyle -= 110
             } else {
-                slide.style.transform = `translateX(-100%)`
-                eslStyle = -100
+                slide.style.transform = `translateX(-110%)`
+                eslStyle = -110
             }
             
         }
@@ -128,17 +128,17 @@ nextButton.addEventListener('click', function() {
             })
             dots[0].style.backgroundColor = "blue"
 
-        } else if(sliders[0].style.transform == 'translateX(-100%)'){
+        } else if(sliders[0].style.transform == 'translateX(-110%)'){
             dots.forEach(dot=> {
                 dot.style.backgroundColor = "rgb(156 ,163, 175)"
             })
             dots[1].style.backgroundColor = "blue"
-        }else if(sliders[0].style.transform == 'translateX(-200%)'){
+        }else if(sliders[0].style.transform == 'translateX(-220%)'){
             dots.forEach(dot=> {
                 dot.style.backgroundColor = "rgb(156 ,163, 175)"
             })
             dots[2].style.backgroundColor = "blue"
-        }else if(sliders[0].style.transform == 'translateX(-300%)'){
+        }else if(sliders[0].style.transform == 'translateX(-330%)'){
             dots.forEach(dot=> {
                 dot.style.backgroundColor = "rgb(156 ,163, 175)"
             })
